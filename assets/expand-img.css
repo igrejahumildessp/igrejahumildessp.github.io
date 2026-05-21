@@ -1,0 +1,122 @@
+@media (min-width: 300px) {
+#close-btn:focus {
+  outline: none;
+}
+
+dialog {
+    padding: 0;
+    border: none;
+    background: transparent;
+    max-width: 90vw;
+    max-height: 90vh;
+    text-align: center; /* Centraliza a imagem e o título no modal */
+}
+
+/* Estilizando o título dentro do modal */
+#expanded-title {
+    color: #00ff6e;
+    text-shadow: 0px 0px 20px #ffffff;
+    margin: 15px 0 15px 0; /* Dá um espaço entre o título e a imagem */
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    width: 75%;
+    margin-left: auto; margin-right: auto;
+}
+
+dialog img {
+    display: block;
+    margin: 0 auto; /* Garante que a imagem fique no meio */
+    max-width: 100%;
+    /* Reduzi um pouco a altura máxima da imagem para dar espaço ao título sem criar barra de rolagem */
+    max-height: 70vh; 
+    object-fit: contain;
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(5px);
+}
+
+#close-btn {
+    position: absolute;
+    /* Subi o botão um pouco para não ficar em cima do título */
+    top: -2px; 
+    right: 0px;
+    background: none;
+    border: none;
+    color: #00ff6e;
+    text-shadow: 0px 0px 10px #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Opcional: faz o mouse virar uma mãozinha ao passar por cima do card inteiro */
+.notice-card, .photo-card {
+    cursor: pointer;
+}
+
+.download-img-btn {
+    margin-top: 15px;
+    padding: 5px 10px;
+    background-color: #00ff6e;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 550;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+}
+
+
+
+@media (min-width: 576px) {
+    #close-btn {font-size: 32px;}
+
+    .download-img-btn {
+        padding: 7px 15px;
+        background-color: #00ff6eb4;
+    }
+
+    .download-img-btn:hover {
+        background-color: #00ff6e;
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #000000;
+        scale: 1.1;
+        transition: 0.3s;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    #close-btn {font-size: 32px;}
+
+    .download-img-btn {padding: 9px 20px;}
+    .download-img-btn {font-size: 1.1rem;}
+}
+
+
+
+@media (min-width: 992px) {
+    #close-btn {
+    top: -4px; 
+    right: 0px;
+    font-size: 35px;
+}
+
+    .download-img-btn {padding: 10px 20px;}
+}
+
+
+
+@media (min-width: 1200px) {
+    #close-btn {
+    top: -4px; 
+    right: 0px;
+    font-size: 35px;
+}
+
+    .download-img-btn {padding: 10px 24px;}
+}
