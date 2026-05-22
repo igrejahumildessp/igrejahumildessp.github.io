@@ -353,7 +353,7 @@ padding: 10px 24px;
         justify-content: space-between;
 
         p {width: 50%}
-        .church-img {width: 45%; height: auto; max-height: 300px;}
+        .church-img {width: 45%; height: auto; max-height: 450px;}
     }
 
     .church-p2 {
@@ -361,7 +361,7 @@ padding: 10px 24px;
         justify-content: space-between;
 
         p {width: 50%}
-        .church-img {width: 45%; height: auto; max-height: 300px;}
+        .church-img {width: 45%; height: auto; max-height: 450px;}
     }
 
     .church-p3 {
@@ -369,7 +369,7 @@ padding: 10px 24px;
         justify-content: space-between;
 
         p {width: 50%}
-        .church-img {width: 45%; height: auto; max-height: 300px;}
+        .church-img {width: 45%; height: auto; max-height: 450px;}
     }
 }
 
