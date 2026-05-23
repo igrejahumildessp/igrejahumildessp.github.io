@@ -258,6 +258,24 @@ footer {
 
 
 
+
+
+
+@media screen and (orientation: landscape) and (max-height: 450px) {
+.hero-section {
+    padding: 0px 40px !important;
+
+    .hero-subtitle {margin-top: 100px !important;} /* Ajusta o espaçamento para paisagem */
+}
+}
+
+
+
+
+
+
+
+
 @media (min-width: 576px) {
 .vis-nav-sm {display: none !important;}
 .vis-menu-sm {display: block !important;}
