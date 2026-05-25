@@ -1,34 +1,35 @@
-// Seleciona todos os CARDS em vez de apenas as imagens
+// Seleciona todos os CARDS para agrupar a imagem e o título corretamente
 const cards = document.querySelectorAll('.expandable');
 const dialog = document.getElementById('preview-dialog');
 const expandedImg = document.getElementById('expanded-img');
-const expandedTitle = document.getElementById('expanded-title'); // Seleciona o novo título do modal
+const expandedTitle = document.getElementById('expanded-title'); 
 const closeBtn = document.getElementById('close-btn');
 
 // Mapeia cada card
 cards.forEach(card => {
-  card.addEventListener('click', () => {
-    // Busca a imagem e o título DENTRO do card que foi clicado
-    const img = card.querySelector('.expandable-img');
-    const title = card.querySelector('.expandable-title');
+  // Busca a imagem e o título DENTRO do card atual
+  const img = card.querySelector('.expandable-img');
+  const title = card.querySelector('.expandable-title');
 
-    // 1. Passa os dados da imagem para o modal (com uma checagem de segurança básica)
-    if (img) {
+  // Adiciona o evento de clique APENAS na imagem (se ela existir), e não no card inteiro
+  if (img) {
+    img.addEventListener('click', () => {
+      // 1. Passa os dados da imagem para o modal
       expandedImg.src = img.src; 
       expandedImg.alt = img.alt;
-    }
 
-    // 2. O SEGREDO ESTÁ AQUI: Verifica se o título existe neste card
-    if (title) {
-      expandedTitle.textContent = title.textContent; // Copia o texto
-      expandedTitle.style.display = 'block';         // Garante que o H2 fique visível
-    } else {
-      expandedTitle.textContent = '';                // Limpa o texto antigo
-      expandedTitle.style.display = 'none';          // Esconde o H2 para não sobrar espaço vazio
-    }
-    
-    dialog.showModal(); // Abre o dialog
-  });
+      // 2. Verifica se o título existe neste card
+      if (title) {
+        expandedTitle.textContent = title.textContent; 
+        expandedTitle.style.display = 'block';         
+      } else {
+        expandedTitle.textContent = '';                
+        expandedTitle.style.display = 'none';          
+      }
+      
+      dialog.showModal(); 
+    });
+  }
 });
 
 // Fechar ao clicar no botão 'X'
@@ -38,7 +39,6 @@ closeBtn.addEventListener('click', () => {
 
 // Fechar ao clicar no fundo escuro
 dialog.addEventListener('click', (e) => {
-  // Como agora o modal tem um texto, o clique fora deve checar se acertou o próprio dialog
   if (e.target === dialog) {
     dialog.close();
   }

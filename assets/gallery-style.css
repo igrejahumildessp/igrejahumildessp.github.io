@@ -84,6 +84,8 @@ backdrop-filter: blur(4px);
             width: 100%; height: 100%;
             border-radius: 10px;
         }
+
+        .expandable-title {display: none;} /* ESCONDE O TÍTULO DO EVENTO (MAS SÓ POR ENQUANTO) */
     }
 }
 
@@ -104,13 +106,14 @@ backdrop-filter: blur(4px);
 footer {
     display: flex;
     justify-content: center;
-    background-color: #a59478;
+    background-color: #09160f;
 
     .footer-text {
         color: #ffffff;
         font-weight: 550;
         text-align: center;
-        margin: 12px 0;
+        margin: 12px 0px;
+        padding: 0px 20px;
     }
 }
 

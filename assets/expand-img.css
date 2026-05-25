@@ -27,7 +27,6 @@ dialog img {
     display: block;
     margin: 0 auto; /* Garante que a imagem fique no meio */
     max-width: 100%;
-    /* Reduzi um pouco a altura máxima da imagem para dar espaço ao título sem criar barra de rolagem */
     max-height: 70vh; 
     object-fit: contain;
 }
@@ -51,7 +50,7 @@ dialog::backdrop {
 }
 
 /* Opcional: faz o mouse virar uma mãozinha ao passar por cima do card inteiro */
-.notice-card, .photo-card {
+.notice-img, .photo-card {
     cursor: pointer;
 }
 
