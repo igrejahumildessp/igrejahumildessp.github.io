@@ -184,7 +184,7 @@ backdrop-filter: blur(4px);
     }
     
     .calendar-img {
-            max-width: 50vh; height: fit-content;
+            max-width: 40vh; height: fit-content;
     }
 
     .download-pdf-btn {
