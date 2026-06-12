@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/imgs/brasoes/logotipo-comunidade.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/expand-img.css">
+    <script src="js/update-url.js"></script>
+    <script src="js/expand-img.js" defer></script>
+    <script src="js/download-action.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <title>Igreja Humilde - Website</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="navpart-logo">
+                <a href="#home"><img class="icon-brasao" src="assets/imgs/brasoes/logotipo-comunidade.png" alt="Brasão da Comunidade"></a>
+            </div>
+            <span> | </span>
+            <div class="navpart-menu">
+                <a class="nav-link vis-nav-sm vis-nav-md" href="#home">Início</a>
+                <a class="nav-link vis-nav-sm vis-nav-md" href="#notices">Avisos</a>
+                <a class="nav-link vis-nav-sm vis-nav-md" href="#timetable">Cronograma</a>
+                <a class="nav-link vis-nav-sm vis-nav-lg" href="#location">Localização</a>
+                <a class="nav-link vis-nav-sm vis-nav-xl" href="calendar.html">Calendário Mensal</a>
+                <a class="nav-link vis-nav-sm vis-nav-md" href="gallery.html">Galeria</a>
+                <div class="dropdown-center nav-menu-link">
+                    <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img class="icon-more" src="assets/imgs/icons/menu.png" alt="Mais">
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item vis-menu-sm vis-menu-md" href="#notices">Avisos</a></li>
+                        <li><a class="dropdown-item vis-menu-sm vis-menu-md" href="#timetable">Cronograma</a></li>
+                        <li><a class="dropdown-item vis-menu-sm vis-menu-lg" href="#location">Localização</a></li>
+                        <li><a class="dropdown-item vis-menu-sm vis-menu-xl" href="calendar.html">Calendário Mensal</a></li>
+                        <li><a class="dropdown-item vis-menu-sm vis-menu-md" href="gallery.html">Galeria</a></li>
+                        <li><a class="dropdown-item vis-menu-sm" href="ministries.html">Ministérios</a></li>
+                        <li><a class="dropdown-item vis-menu-sm" href="history.html">Nossa História</a></li>
+                    </ul>
+                </div>
+            </div>
+            <span> | </span>
+            <div class="navpart-smedia">
+                <a href="https://forms.gle/uFsQBCxFnTcL2Az96" class="nav-link" target="_blank"><img class="icon-social-media2" src="assets/imgs/icons/suggestions.png" alt="Sugestões"></a>
+                <a href="https://www.instagram.com/n_senhoradoshumildes/" class="nav-link" target="_blank"><img class="icon-social-media" src="assets/imgs/social_media/instagram.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UC4i4gs5bawwal14ATDrk0Mg" class="nav-link" target="_blank"><img class="icon-social-media2" src="assets/imgs/social_media/youtube.png" alt="YouTube"></a>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero-section" id="home">
+        <h2 class="hero-subtitle prev-select">DIOCESE DE CAMAÇARI • PARÓQUIA SÃO SEBASTIÃO</h2>    
+        <h1 class="hero-title prev-select">COMUNIDADE NOSSA SENHORA DOS HUMILDES</h1>
+        <p class="hero-description prev-select">Bem-vindo ao nosso site oficial! <br> Aqui você encontrará informações sobre nossa comunidade, avisos, eventos e muito mais.</p>
+    </section>
+
+
+    <section class="notices-section" id="notices">
+            <h1 class="notices-title prev-select">Avisos</h1>
+
+            <div class="notices-container">
+                <div class="notice-card expandable">
+                    <h2 class="notice-title expandable-title">Participe da Avaliação do Nosso Novo Site!</h2>
+                    <img class="notice-img expandable-img" src="assets/imgs/notices/card-sugestoes-site.jpg" alt="Card de Convite para Avaliação do Site">
+                    <button class="direct-btn" onclick="window.open('https://forms.gle/uFsQBCxFnTcL2Az96', '_blank')">
+                        Link direto para o formulário!
+                    </button>
+                </div>
+
+                <div class="notice-card expandable">
+                    <h2 class="notice-title expandable-title">Próxima Santa Missa<br> • Nesta segunda-feira (15/06)</h2>
+                    <img class="notice-img expandable-img" src="assets/imgs/notices/card-prox-missa-1506.jpg" alt="Card de Convite para a Santa Missa">
+                </div>
+            </div>
+    </section>
+
+    <section class="timetable-section" id="timetable">
+            <h1 class="timetable-title prev-select">Cronograma</h1>
+
+            <div class="timetable-container">
+                <div class="event-p1">
+                    <h2 class="event-type">Santa Missa</h2>
+                    <p class="event-routine">● Todos os 2º e 4º sábados do mês<br>Às 17:00 ou 19:00<br>(vale confirmar sempre o horário)</p>
+                </div>
+                <div class="event-p2">
+                    <h2 class="event-type">Celebração</h2>
+                    <p class="event-routine">● Todas as terças-feiras do mês<br>Às 19:00</p>
+                </div>
+                <div class="event-p3">
+                    <h2 class="event-type">Adoração</h2>
+                    <p class="event-routine">● Todas as quintas-feiras do mês<br>Às 19:00</p>
+                </div>
+            </div>
+    </section>
+    
+    <section class="location-section" id="location">
+            <h1 class="location-title prev-select">Localização</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1779381914718!6m8!1m7!1sdqPIbEK35zH9rh7hzjEwKQ!2m2!1d-12.51976896950391!2d-38.49659766339431!3f47.16038109785978!4f0.4846193677028907!5f0.4000000000000002" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+
+
+
+
+
+<!-- O container nativo para o modo tela cheia -->
+<dialog id="preview-dialog">
+    <button id="close-btn" aria-label="Fechar">&times;</button>
+    
+    <!-- Novo elemento para receber o título do card -->
+    <h2 id="expanded-title"></h2>
+    <img id="expanded-img" src="" alt="Imagem Expandida">
+    <button class="download-img-btn" id="download-btn" aria-label="Baixar Imagem">Baixar</button>
+</dialog>
+
+
+<footer>
+    <p class="footer-text prev-select">© 2026 Comunidade Nossa Senhora dos Humildes. Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
