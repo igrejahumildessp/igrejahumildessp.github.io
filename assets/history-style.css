@@ -1,0 +1,548 @@
+@media (min-width: 300px) {
+.vis-nav-sm {display: none !important;}
+.vis-menu-sm {display: block !important;}
+
+header {
+margin: auto;
+justify-content: center;
+padding: 10px 20px;
+display: flex;
+width:100%;
+height: 80px !important;
+position: fixed;
+top: 0; left: 0;
+background-color: #ffffff7d; /* ou 929597 */
+backdrop-filter: blur(4px);
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .navpart-menu {
+            display: flex;
+            gap: 20px;
+
+            .nav-menu-link { padding: 5px 10px; color: #000000; font-size: 1rem; text-decoration: none; }
+        }
+
+        .navpart-smedia {
+            display: flex;
+            gap: 25px;
+        }
+
+        span { display: none; }
+    }
+}
+
+.church-history-section {
+    background: linear-gradient(to top, rgba(132, 139, 135, 0.3) 0%, transparent 100%), #09160f;
+    width: 100%;                                        /* Largura total */
+    height: fit-content;                                /* Altura da tela inteira do dispositivo do usuário */
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+
+    .church-history-title {
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #00ff6e;
+        margin-top: 100px; /* ESPAÇAMENTO SUPERIOR */
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .church-p1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        gap: 24px;
+    }
+
+    .church-p2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        gap: 24px;
+    }
+
+    .church-p3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        gap: 24px;
+    }
+
+    p {margin-bottom: 0;}
+
+    .church-img {
+        width: 100%; height: 85vw;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
+.patron-saint-section {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, transparent 1%),
+                linear-gradient(to top, rgba(108, 108, 80, 0.3) 0%, transparent 100%), #848b87;
+    width: 100%;                                        /* Largura total */
+    height: fit-content;                                      /* Altura da tela inteira do dispositivo do usuário */
+    padding: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: justify;
+
+    .patron-saint-title {
+        color: #ffffff;
+        text-shadow: 0px 0px 10px #00ff6e;
+        margin-top: 40px; /* ESPAÇAMENTO SUPERIOR */
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .saint-p1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        gap: 24px;
+    }
+
+    .saint-p2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        gap: 24px;
+    }
+
+    .saint-p3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+        gap: 24px;
+    }
+    
+    p {margin-bottom: 0;}
+
+    .saint-img {
+        width: 100%; height: 85vw;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
+
+.icon-more { width: 24px; height: 24px; }
+.icon-brasao { width: 60px; height: 60px; }
+.icon-social-media { width: 24px; height: 24px; }
+.icon-social-media2 { width: 29px; height: 29px; }
+}
+
+.prev-select {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #a59478;
+
+    .footer-text {
+        color: #ffffff;
+        font-weight: 550;
+        text-align: center;
+        margin: 12px 0;
+        padding: 0px 20px;
+    }
+}
+
+
+
+
+
+
+@media (min-width: 576px) {
+.vis-nav-sm {display: none !important;}
+.vis-menu-sm {display: block !important;}
+
+header {
+padding: 10px 45px;
+
+    .main-nav {
+        width: 100%;
+
+        .navpart-logo {
+            .icon-brasao { transition: 0.3s; }
+            .icon-brasao:hover { scale: 1.1; transition: 0.3s; }
+        }
+
+        .navpart-menu {
+            gap: 20px;
+
+            .nav-menu-link { padding: 5px 10px; color: #000000; font-size: 1.1rem; font-weight: 550; text-decoration: none; transition: 0.3s; }
+            .nav-menu-link:hover { color: #00ff6e; text-shadow: 0px 0px 10px #000000; scale: 1.2; transition: 0.3s; .dropdown-item{text-shadow: none !important;}}
+        }
+
+        .navpart-smedia {
+            display: flex;
+            gap: 25px;
+
+            .nav-link { transition: 0.3s; }
+            .nav-link:hover { scale: 1.4; transition: 0.3s; }
+        }
+    }
+}
+
+.church-history-section {
+    padding: 0px 40px;
+    flex-direction: column;
+    gap: 24px;
+
+    .church-img {width: 90%; height: 70vw;}
+}
+
+.patron-saint-section {
+    padding: 0px 40px;
+    flex-direction: column;
+    gap: 24px;
+
+    .patron-saint-title {
+        margin-top: 40px; /* ESPAÇAMENTO SUPERIOR */
+    }
+
+    .saint-img {width: 90%; height: 70vw;}
+}
+
+
+.icon-more { width: 24px; height: 24px; }
+.icon-brasao { width: 60px; height: 60px; }
+.icon-social-media { width: 24px; height: 24px; }
+.icon-social-media2 { width: 29px; height: 29px; }
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+.vis-nav-md {display: block !important;}
+.vis-menu-md {display: none !important;}
+
+header {
+padding: 10px 24px;
+
+    .main-nav {
+        width:auto;
+        gap: 32px;
+
+        .navpart-menu {
+            gap: 20px;
+
+            .nav-link { padding: 5px 10px; color: #000000; font-size: 1.1rem; font-weight: 550; text-decoration: none; transition: 0.3s; }
+            .nav-link:hover { color: #00ff6e; text-shadow: 0px 0px 10px #000000; scale: 1.2; transition: 0.3s; }
+        }
+
+        .navpart-smedia {
+            gap: 25px;
+        }
+    }
+}
+
+.church-history-section {
+    padding: 0px 80px;
+    flex-direction: column;
+    gap: 32px;
+
+    .church-p1 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .church-img {width: 45%; height: auto; max-height: 300px;}
+    }
+
+    .church-p2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .church-img {width: 45%; height: auto; max-height: 360px;}
+    }
+
+    .church-p3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+
+        p {width: 100%;}
+        .church-img {width: 100%; height: 60vw;}
+    }
+}
+
+.patron-saint-section {
+    padding: 0px 80px;
+    flex-direction: column;
+    gap: 32px;
+
+    .patron-saint-title {
+        margin-top: 50px; /* ESPAÇAMENTO SUPERIOR */
+    }
+
+    .saint-p1 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .saint-img {width: 45%; height: auto; max-height: 300px;}
+    }
+
+    .saint-p2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .saint-img {width: 45%; height: auto; max-height: 300px;}
+    }
+
+    .saint-p3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ffffff;
+        width: 100%;
+        font-size: 1.1rem;
+        margin-bottom: 50px;
+
+        p {width: 100%;}
+        .saint-img {width: 100%; height: 60vw;}
+    }
+}
+
+
+
+
+.icon-more { width: 24px; height: 24px; }
+.icon-brasao { width: 60px; height: 60px; }
+.icon-social-media { width: 24px; height: 24px; }
+.icon-social-media2 { width: 29px; height: 29px; }
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) {
+.vis-nav-lg {display: block !important;}
+.vis-menu-lg { display: none !important; }
+
+header {
+padding: 10px 24px;
+
+    .main-nav {
+        width:auto;
+        gap: 32px;
+
+        .navpart-menu {gap: 20px;}
+
+        .navpart-smedia {gap: 25px;}
+    }
+}
+
+.church-history-section {
+    padding: 0px 90px;
+    flex-direction: column;
+    gap: 32px;
+
+    .church-p2 {
+        .church-img {width: 45%; height: auto; max-height: 430px;}
+    }
+
+    .church-p3 {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        p {width: 50%;}
+        .church-img {width: 45%; height: auto; max-height: 300px; margin-bottom: 50px;}
+    }
+}
+
+.patron-saint-section {
+    padding: 0px 90px;
+    flex-direction: column;
+    gap: 32px;
+
+    .patron-saint-title {
+        margin-top: 50px; /* ESPAÇAMENTO SUPERIOR */
+    }
+
+    .saint-p3 {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0;
+
+        p {width: 50%;}
+        .saint-img {width: 45%; height: auto; max-height: 300px; margin-bottom: 50px;}
+    }
+}
+
+
+
+.icon-more { width: 24px; height: 24px; }
+.icon-brasao { width: 60px; height: 60px; }
+.icon-social-media { width: 24px; height: 24px; }
+.icon-social-media2 { width: 29px; height: 29px; }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) {
+.vis-nav-xl {display: block !important;}
+.vis-menu-xl {display: none !important;}
+
+header {
+padding: 10px 24px;
+
+    .main-nav {
+        width:auto;
+        gap: 32px;
+
+        .navpart-menu {gap: 20px;}
+
+        .navpart-smedia {
+            gap: 25px;
+
+            .nav-link { transition: 0.3s; }
+            .nav-link:hover { scale: 1.4; transition: 0.3s; }
+        }
+
+        span {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            font-size: 1.4rem;
+            display: block;
+        }
+    }
+}
+
+.church-history-section {
+    padding: 0px 120px;
+    flex-direction: column;
+    gap: 38px;
+
+    .church-p1 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .church-img {width: 45%; height: auto; max-height: 450px;}
+    }
+
+    .church-p2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .church-img {width: 45%; height: auto; max-height: 750px;}
+    }
+
+    .church-p3 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .church-img {width: 45%; height: auto; max-height: 450px;}
+    }
+}
+
+.patron-saint-section {
+    padding: 0px 120px;
+    flex-direction: column;
+    gap: 38px;
+
+    .patron-saint-title {
+        margin-top: 50px; /* ESPAÇAMENTO SUPERIOR */
+    }
+
+    .saint-p1 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .saint-img {width: 45%; height: auto; max-height: 450px;}
+    }
+
+    .saint-p2 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .saint-img {width: 45%; height: auto; max-height: 750px;}
+    }
+
+    .saint-p3 {
+        flex-direction: row;
+        justify-content: space-between;
+
+        p {width: 50%}
+        .saint-img {width: 45%; height: auto; max-height: 450px;}
+    }
+}
+
+
+
+
+.icon-more { width: 24px; height: 24px; }
+.icon-brasao { width: 60px; height: 60px; }
+.icon-social-media { width: 24px; height: 24px; }
+.icon-social-media2 { width: 29px; height: 29px; }
+}
